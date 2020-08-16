@@ -68,4 +68,4 @@ static void copy(String src, String dst) throws IOException {
 }
 ```
 
-`try-with-resources` 버전이 짧고 읽기 수월할 뿐 아니라 문제를 진단하기도 훨씬 좋다. `readLine()`과 ``close()` 호출 양쪽에서 예외가 발생한다면, `close()`에서 발생한 예외는 숨겨지고 `readLine()`에서 발생한 예외가 기록된다. 이렇게 숨겨진 예외들도 그냥 버려지지는 않고, 스택 추적 내역에 숨겨졌다는 꼬리표를 달고 출력된다. 또한 자바 7에서 `Throwable`에 추가된 `getSusppressed` 메소드를 이용하면 프로그램 코드에서 가져올 수도 있다.
+`try-with-resources` 버전이 짧고 읽기 수월할 뿐 아니라 문제를 진단하기도 훨씬 좋다. `readLine()`과 `close()` 호출 양쪽에서 예외가 발생한다면, `close()`에서 발생한 예외는 숨겨지고 `readLine()`에서 발생한 예외가 기록된다. 이렇게 숨겨진 예외들도 그냥 버려지지는 않고, 스택 추적 내역에 숨겨졌다는 꼬리표를 달고 출력된다. 또한 자바 7에서 `Throwable`에 추가된 `getSusppressed` 메소드를 이용하면 프로그램 코드에서 가져올 수도 있다.
